@@ -20,7 +20,7 @@ source [name-of-enviorment]/bin/activate
 ##  Managing Packages with pip
 You can install, upgrade, and remove packages using a program called pip. By default pip will install packages from the Python Package Index.
 
-**Installing Modules**
+**Installing Packages**
 
 You can install the latest version of a package by specifying a package’s name
 ``` python
@@ -32,17 +32,43 @@ You can also install a specific version of a package by giving the package name 
 (env) $ pip install [name-of-package] == 2.6.0
 ``` 
 
-**Updating Modules**
+**Updating Packages**
 
 If you re-run this command, pip will notice that the requested version is already installed and do nothing. You can supply a different version number to get that version, or you can run pip install --upgrade to upgrade the package to the latest version
 
 ``` python
 (env) $ pip install -- upgrade [name-of-package] 
 ``` 
-**Unistalling  Modules**
+**Unistalling  Packages**
 
 pip uninstall followed by one or more package names will remove the packages from the virtual environment.
 
 ``` python
 (env) $ pip uninstall [name-of-package] 
 ``` 
+
+**Other usefull pip commands**
+
+```pip list ``` will display all of the packages installed in the virtual environment
+
+``` pip show [name-of-package] ``` will display information about a particular package
+
+```pip freeze ``` will produce a similar list of the installed packages, but the output uses the format that pip install expects. A common convention is to put this list in a requirements.txt file:
+
+ ```
+(env) $ pip freeze > requirements.txt
+```
+
+The ```requirements.txt``` can then be committed to version control and shipped as part of an application. Users can then install all the necessary packages with install -r:
+
+```
+(env) $ pip install -r requirements.txt
+```
+<br>
+<br>
+<br>
+<br>
+
+**Biblography:**
+
+[Python](https://docs.python.org/3/tutorial/venv.html)

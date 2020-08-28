@@ -65,6 +65,9 @@ The ```requirements.txt``` can then be committed to version control and shipped 
 (env) $ pip install -r requirements.txt
 ```
 
+<br>
+
+### Uploading Enviorment to Jupyter Notebook
 Now your eviorment is read, if you want to upload your venv to Jupyer notebooks got to the folder that contains the enviorment and apply the following code:
 ``` python
 python -m ipykernel install --user --name=[name-of-enviorment]

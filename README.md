@@ -64,6 +64,22 @@ The ```requirements.txt``` can then be committed to version control and shipped 
 ```
 (env) $ pip install -r requirements.txt
 ```
+
+Now your eviorment is read, if you want to upload your venv to Jupyer notebooks got to the folder that contains the enviorment and apply the following code:
+``` python
+python -m ipykernel install --user --name=[name-of-enviorment]
+```
+
+Of course this will only work if you have Jupyter Notebooks isntalled:
+```
+pip install notebook
+````
+
+As an extre step you will need ipykernel 
+
+```
+pip install --user ipykernel
+```
 <br>
 <br>
 <br>
@@ -72,3 +88,4 @@ The ```requirements.txt``` can then be committed to version control and shipped 
 **Biblography:**
 
 [Python](https://docs.python.org/3/tutorial/venv.html)
+[Parametric thoughts](https://janakiev.com/blog/jupyter-virtual-envs/)

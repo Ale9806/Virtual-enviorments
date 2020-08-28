@@ -88,4 +88,5 @@ pip install --user ipykernel
 **Biblography:**
 
 [Python](https://docs.python.org/3/tutorial/venv.html)
+<br>
 [Parametric thoughts](https://janakiev.com/blog/jupyter-virtual-envs/)
